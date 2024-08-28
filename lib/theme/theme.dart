@@ -8,16 +8,16 @@ class DefaultColors {
   static const Color purple = Color(0xFF8E8FF8);
   static const Color orange = Color(0xFFF18F3B);
   static const Color lightteal = Color(0xFF58D5D4);
-
 }
 
 class FontSizes {
-  static const extraSmall = 14.0;
-  static const small = 16.0;
-  static const standard = 18.0;
-  static const large = 20.0;
-  static const extraLarge = 24.0;
-  static const doubleExtraLarge = 32.0;
+  static const extraSmall = 15.0;
+  static const small = 20.0;
+  static const standard = 22.0;
+  static const large = 25.0;
+  static const extraLarge = 30.0;
+  static const doubleExtraLarge = 35.0;
+  static const tripleExtraLarge = 40.0;
 }
 
 class AppTheme {
@@ -31,7 +31,7 @@ class AppTheme {
           fontSize: FontSizes.small,
           color: Colors.white,
         ),
-         bodyMedium: GoogleFonts.alegreyaSans(
+        bodyMedium: GoogleFonts.alegreyaSans(
           fontSize: FontSizes.standard,
           color: Colors.grey,
         ),
@@ -64,6 +64,11 @@ class AppTheme {
           fontSize: FontSizes.doubleExtraLarge,
           color: Colors.black,
           fontWeight: FontWeight.bold,
+        ),
+        displayMedium: GoogleFonts.alegreya(
+          fontSize: FontSizes.tripleExtraLarge,
+          color: const Color(0xFFFAFAFA),
+          fontWeight: FontWeight.w600,
         ),
       ),
     );
