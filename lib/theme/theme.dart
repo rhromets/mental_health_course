@@ -30,12 +30,21 @@ class AppTheme {
   static ThemeData get lightheme {
     return ThemeData(
       useMaterial3: true,
-      primaryColor: const Color(0xFFAEAFF7),
+      primaryColor: const Color(0xFFCDD0E3),
       focusColor: const Color(0xFF371B34),
       appBarTheme: const AppBarTheme(
         backgroundColor: Colors.white,
       ),
       scaffoldBackgroundColor: Colors.white,
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.white,
+        showUnselectedLabels: false,
+        showSelectedLabels: false,
+        enableFeedback: false,
+      ),
+      splashFactory: NoSplash.splashFactory,
+      highlightColor: Colors.transparent,
       textTheme: TextTheme(
         bodySmall: GoogleFonts.alegreyaSans(
           fontSize: FontSizes.small,
