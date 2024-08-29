@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mental_health_course/views/meditation/meditation_screen.dart';
 import 'package:mental_health_course/views/music_player/music_player_screen.dart';
+import 'package:mental_health_course/views/playlist/playlist_screen.dart';
 import 'package:mental_health_course/widgets/bottom_nav_bar/bloc/navigation_bloc.dart';
 import 'package:mental_health_course/widgets/bottom_nav_bar/bloc/navigation_state.dart';
 import 'package:mental_health_course/widgets/bottom_nav_bar/bottom_nav_bar.dart';
@@ -12,9 +13,7 @@ class HomeScreen extends StatelessWidget {
   final List<Widget> pages = [
     const MeditationScreen(),
     const MusicPlayerScreen(),
-    const Scaffold(
-      body: Center(child: Text('Navigation screen 3')),
-    ),
+    PlaylistScreen(),
     const Scaffold(
       body: Center(child: Text('Navigation screen 4')),
     ),

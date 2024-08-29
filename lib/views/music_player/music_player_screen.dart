@@ -10,9 +10,14 @@ class MusicPlayerScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        leading: Padding(
-          padding: const EdgeInsets.only(left: 20),
-          child: Image.asset('assets/images/down-arrow.png'),
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Padding(
+            padding: const EdgeInsets.only(left: 20),
+            child: Image.asset('assets/images/down-arrow.png'),
+          ),
         ),
         actions: [
           Image.asset('assets/images/playlist-icon.png'),
